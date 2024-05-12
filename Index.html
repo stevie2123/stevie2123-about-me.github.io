@@ -1,0 +1,231 @@
+<DOCTYPE html>
+<html>
+<head>
+	<title>About Me</title>
+	<script type="text/javascript" src="StephanieBrogdon_Forms.js"></script>
+	<link rel="stylesheet" type"text/css" href="StephanieBrogdon_FormStyles.css">
+	<!-- Last Updated: 05/04/24 10:52pm -->
+
+</head>
+
+
+<body>
+  <div align="center">
+  
+<img src="eculogo.png" alt="ECU Logo" width="15%" height"auto"> <br> <br> 
+<h1>✦✦✦ Navigation ✦✦✦</h1>    
+  </div>
+
+	<nav>
+	  <ul>
+	    <li><a href="#aboutme">About Me</a></li>
+	    <li><a href="#courselist">Courses I'm In</a></li>
+	    <li><a href="#formexamples">JavaScript & Forms Examples</a></li>
+	  </ul>
+	</nav>
+    
+  <br><br><hr width="70%"><br><br>
+
+<div>    
+<section id="amoutme">
+  <div align="center">
+  <h1>✦✦✦ About Me! ✦✦✦</h1>   
+ <img src="FrodoChristmas.png" alt="Australian shepherd in hoodie.." width="25%" height"auto"> 
+ </div>
+ <br> <br> <br> <br> <br> <br>
+
+     
+	<b>My name is Stephanie Brogdon.</b> <br>
+	<i>My major is Computer Science with a minor in Mass Comm.</i> <br>
+	<u>I am a sophomore.</u> 
+	<br><br><br><br><br><br>
+</section>
+</div>
+
+<h1>✦✦✦ Course List ✦✦✦</h1> 
+<div>	
+<section id="courselist">
+<div class="container">
+	<div class="grid grid-1">
+	<section id="internetprogramming">
+	<h2>CMPSC-3323 - Internet Programming:</h2>
+	    <p> Creating websites using HTML, CSS, and Javascript! This class is all about the front-end of web design. AKA, the current class. I like using HTML because I'm interested in web design and have used builders like WIX, but this will allow me to start from scratch and learn the basics!</p>
+	    </div>
+	   
+	<div class="grid grid-2">
+	<section id="systemadmin">
+	<h2>CMPSC-4223 - UNIX System Administration:</h2>	   
+  		<p> The basics of running, maintaining, etc. a Unix System (though, we are technically using Linux). Not my favorite class, but I do feel like a hacker when I'm working in the terminal… so that is a plus.</p>
+  		<div class="ascii-1">
+  		<br>
+  		<pre>
+	 ╱|、				
+	(˚ˎ 。7  			
+	|、˜〵          
+	じしˍ,)ノ			
+        </pre>
+        </div>
+  		</div>
+  	
+  	<div class="grid grid-3">
+  	<section id="mediapracticum">
+  	<h2> MCOM-3013 - Media Practicum:</h2>
+  		<p> Media Practicum is about students coming together and working on various projects in every aspect of the industry! One other classmate and I are exploring dark room photography: shooting on film cameras, developing rolls of film, and enlarging prints all manually. My favorite class this semester! </p>
+  		<br>
+  		<pre>
+	☆ *　. 　☆
+	　　. ∧＿∧　∩　* ☆
+	* ☆ ( ・∀・)/ .
+	　. ⊂　　 ノ* ☆
+	☆ * (つ ノ .☆
+	　　 (ノ  		
+		</pre>
+  		</div>
+  	
+  	<div class="grid grid-4">
+  	<section id="introsoc">
+  	<h2> SOC-1113 - Introductory Sociology:</h2>	 	
+  		<p> A general overview of sociology as a whole. We are currently taking apart and deciphering social stratification and social interactions. An interesting and eye-opening course! </p>
+  		</div>
+</div>
+
+  		<hr width="80%"><br><br>
+</section>
+</div>  		
+
+
+<!-- JavaScript Section -->
+
+
+<h1>✦✦✦ JavaScript and Forms Examples ✦✦✦</h1> 
+<div>	
+<section id="formexamples">
+<div class="container">
+	<div class="grid grid-1">
+	<section id="arithmetic">
+	<h2>Arithmetic</h2>
+	    <p>Enter two numbers and the operator you want to perform!</p>
+	    
+	    <form name="ArithmeticForm">
+	    <label>First Number:</label>
+	    	<input type="number" name="firstarithmeticnumber" placeholder="1"/>
+	    <br>
+	  	<label>Second Number:</label>
+	    	<input type="number" name="secondarithmeticnumber" placeholder="2"/>
+	    <br>
+	    <br>
+	    <legend>Select Operator:</legend><br>
+	    	<input type="radio" id="addition" name="arithmeticoperator" value="Addition" checked>
+	    		<label for="addition">Addition</label><br>
+	    	<input type="radio" id="subtraction" name="arithmeticoperator" value="Subtraction">
+	    		<label for="subtraction">Subtraction</label><br>
+	    	<input type="radio" id="multiplication" name="arithmeticoperator" value="Multiplication">
+	    		<label for="multiplication">Multiplication</label><br>
+	    	<input type="radio" id="division" name="arithmeticoperator" value="Division">
+	    		<label for="division">Division</label><br>
+	    <br>
+	    <button class="button" onclick="performArithmetic()">Calculate</button>
+	    
+	    </form>
+	    </section>
+	    </div>
+	   
+	<div class="grid grid-2">
+	<section id="Factorial">
+	<h2>Factorial</h2>	   
+  		<p>Enter the number you wish to know the factorial of!</p>
+  		
+  		<form name="FactorialForm">
+  		<label>Enter Number: </label>
+  			<input type="number" name="factorialnumber" placeholder="1">
+  		<br>
+  		<button class="button" onclick="performFactorial()">Calculate</button>
+  	
+  		</form>
+  		</section>
+  		</div>
+  	
+  	<div class="grid grid-3">
+  	<section id="fibonacci">
+  	<h2>Calculate the Nth Fibonacci Number</h2>
+  		<p>Enter any placement in the Fibonacci sequence to recieve what number is in that spot!</p>
+  		
+  		<form name="FibonacciForm">
+  		<label>Enter Number: </label>
+  			<input type="number" name="fibonaccinumber" placeholder="1">
+  		<br>
+  		<button class="button" onclick="performFibonacci()">Calculate</button>
+
+  		</form>
+  		</section>
+  		</div>
+  	
+  	<div class="grid grid-4">
+  	<section id="range">
+  	<h2>Find the Range</h2>	 	
+  		<p>Enter three numbers to find the range of them!</p>
+  		
+  		<form name="RangeForm">
+  		<label>First Number:</label>
+  			<input type="number" name="num1" placeholder="1">
+  		<br>
+  		<label>Second Number:</label>
+  			<input type="number" name="num2" placeholder="2">
+  		<br>
+  		<label>Thrird Number:</label>
+  			<input type="number" name="num3" placeholder="3">
+  		<br> <br>
+  		<button class="button" onclick="performRange()">Calculate</button>
+  		
+  		</form>
+  		</section>
+  		</div>
+
+  	<div class="grid grid-5">
+  	<section id="mailinglist">
+  	<h2>Join Our Mailing List</h2>	 	
+  		<p>Sign up for our super exclusive emailing list!</p>
+  		<br>
+  		
+  		<form name="SignupForm">
+  		<label>First Name:</label>
+  			<input type="text" name="firstname" placeholder="Jane"/>
+  		<br>
+  		<label>Last Name:</label>
+  			<input type="text" name="lastname" placeholder="Doe"/>
+  		<br>
+  		<label>Email:</label>
+  			<input type="email" name="email" placeholder="jane.doe@hotmail.com"/>
+  		<br>
+  		<label>ZIP Code:</label>
+  			<input type="number" name="zip" placeholder="12345"/>
+  		<br>
+  		<br>
+  		
+  		<button class="button" onclick="addSignup()">Sign Me Up!</button>
+  		<button type="reset" class="button">Reset</button>
+  		
+  		<br><br>
+  		
+  		<div id="signupList"></div>
+  		
+  		</form>
+  		</section>
+  		</div>
+  		
+<div id="signupList"></div>
+
+</div>  		
+</section>
+</div>  		
+
+<br><br>
+<div class="footer" align="center">
+<a href="https://www.ecok.edu">ECU Homepage</a>
+<br><br>
+</div>
+<br>	
+
+
+</body>
+</html>
